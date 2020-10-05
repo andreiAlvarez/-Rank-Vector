@@ -10,3 +10,8 @@ const ranks = a => {
     }
     return ans;
 }
+
+
+// solution 2
+
+const ranks = a => a.map(i => (a.map(i => i).sort((a, b) => b - a).indexOf(i) + 1));
